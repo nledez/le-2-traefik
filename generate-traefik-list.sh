@@ -20,7 +20,7 @@ true > "${TEMPFILENAME}"
 
 for cert in *; do
 	PRIVKEY="${cert}/privkey.pem"
-	CERT="${cert}/cert.pem"
+	CERT="${cert}/fullchain.pem"
 	if [[ -f ${CERT} && -f ${PRIVKEY} ]]; then
 		{
 			echo "[[tls.certificates]]"
